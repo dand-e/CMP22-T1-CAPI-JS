@@ -9,12 +9,14 @@
 
 body {
   height: 95vh;
+  width: 95%;
   display: flex;
   justify-content: flex-end;
   margin-right: 40px;
   align-items: center;
   background-image: url(./yugi.jpg);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 }
 
 #demo {
@@ -38,12 +40,15 @@ body {
 
 .title {
   font-size: 2rem;
+  background-color: #7f8fa683;
 }
 
 .type {
   align-self: flex-start;
   font-style: italic;
   font-size: 1.2rem;
+  padding-right: 115px;
+  background-color: #7f8fa683;
 }
 
 .type::before {
@@ -53,5 +58,6 @@ body {
 }
 
 .description {
-  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #7f8fa683;
 }
