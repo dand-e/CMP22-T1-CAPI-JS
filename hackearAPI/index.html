@@ -5,12 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consumindo API hackear()</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap');
+
+    body{
+      margin: 0 auto;
+      height: 100vh;
+      background: linear-gradient(#55CDFC, #FFFFFF, #f7a8b8), no-repeat;
+    }
+    main{
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    main>button{
+      margin: 10px;
+      border-radius: 50px;
+      border: 1px solid lightgray;
+      font-family:'Poppins', 'Roboto', sans-serif;
+      padding: 15px;
+      transition: all ease-in-out 500ms;
+    }
+    .even:hover{
+      background-color: rgba(255, 182, 193, 0.767);
+      color: white;
+    }
+    .odd:hover{
+      background-color: #55cdfc81;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <button onclick="createBeginners()">🌈 Adicionar</button>
-  <button onclick="updateBeginer('id aqui')">🌈 Atualizar</button>
-  <button onclick="deleteBeginer('id aqui')">🌈 Deletar</button>
-  <button onclick="filterBeginers('state', 'sp')">🌈 Filtrar</button>
-  <script src="script.js"></script>
+  <main>
+    <button class="even" onclick="getBeginers()">🌈 Ver lista</button>
+    <button class="even" onclick="createBeginners()">🌈 Adicionar out</button>
+    <button class="even" onclick="createBeginers()">🌈 Adicionar in</button>
+    <button class="odd" onclick="updateBeginer('62b7b484816d6d00049f6f6a')">🌈 Atualizar</button>
+    <button class="even" onclick="deleteBeginer('62b7b4aa816d6d00049f6f71')">🌈 Deletar</button>
+    <button class="odd" onclick="filterBeginers('state', 'sp')">🌈 Filtrar</button>
+    <script src="script.js" type="text/javascript"></script>
+  </main>
 </body>
 </html>
